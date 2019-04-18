@@ -24,19 +24,29 @@
 ## Some  simple Code standard -
 
 1. Code layout and implementation
-   like declarations and body properties
-   imports...
+   like declarations and body properties should stay together
+   imports... 
    static
    varaibles
+   constructors
    public methods
-   private
+   private methods
    @Test
+   document  the interface signitures and the are all public uless its java 8  some  are defaults
+   so no need to add public keyword.
+   enums by default have private constructor no need to say private 
+   don't throw exception where its not thrown AKA jisis is thrown like crazy in our code base annoying
+   
 2. use single (, remove usless brace
 3. remove unused imports
-4. smaller  or refactor out logic into a privatemethod that define the intent
+4. smaller or refactor out logic into a private methods that define the intent
 5. Try to move away from null checks
-6. Try to remove all warnings when possible use the sonar guid
+6. Try to remove all warnings when possible use the sonar guide and the blaring yello marks in the side of file
 7. Take advantage of the Spell checker of the IDE
 8. No Need for explicit  if else logic to return a simple true or false just return the results of the check
-
+9. Code smell, passing a boolean to a method violate the single resposibility rule and leads to bug, mutation and all kinds of
+   unexpected results.
+10. Reduce your test to a single unit for controllable and predictable results. Single responsibility rule.
+11. Use the IDE code formatter or shortcut keys
+12. Be responsible in taking pride in our craft, Joy and respect. We are Geniuss and Gods.
 
