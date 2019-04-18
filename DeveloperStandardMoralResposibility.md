@@ -24,18 +24,18 @@
 ## Some  simple Code standard -
 k
 1. Code layout and implementation 
-   a. like declarations and body properties should stay together 
-   b. imports... 
-   c. static 
-   d. varaibles 
-   e. constructors 
-   f. public methods 
-   g. private methods 
-   h. @Test 
-   i. documentthe interface signitures and the are all public uless its java 8  some  are defaults 
-   j. so no need to add public keyword. 
-   k. enums by default have private constructor no need to say private 
-   l. don't throw exception where its not thrown AKA jisis is thrown like crazy in our code base annoying 
+   *. like declarations and body properties should stay together 
+   *. imports... 
+   *. static 
+   *. varaibles 
+   *. constructors 
+   *. public methods 
+   *. private methods 
+   *. @Test 
+   *. documentthe interface signitures and the are all public uless its java 8  some  are defaults 
+   *. so no need to add public keyword. 
+   *. enums by default have private constructor no need to say private 
+   *. don't throw exception where its not thrown AKA jisis is thrown like crazy in our code base annoying 
   
 2. use single (, remove usless brace
 3. remove unused imports
