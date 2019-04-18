@@ -43,9 +43,8 @@
 5. Try to move away from null checks
 6. Try to remove all warnings when possible use the sonar guide and the blaring yello marks in the side of file
 7. Take advantage of the Spell checker of the IDE
-8. No Need for explicit  if else logic to return a simple true or false just return the results of the check
-9. Code smell, passing a boolean to a method violate the single resposibility rule and leads to bug, mutation and all kinds of
-   unexpected results.
+8. No Need for explici if else logic just to return a simple true or false just return the results of the check
+9. Code smell, passing a boolean to a method violates the single resposibility rule and leads to bugs, mutations and all kinds of unexpected results.
 10. Reduce your test to a single unit for controllable and predictable results. Single responsibility rule.
 11. Use the IDE code formatter or shortcut keys
 12. Be responsible in taking pride in our craft, Joy and respect. We are Geniuss and Gods.
