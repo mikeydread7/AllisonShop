@@ -20,3 +20,23 @@
 3. Principle of Least Knowledge (also known as the Law of Demeter or LoD). ...  
 4. Don't repeat yourself (DRY). ...  
 5. Minimize upfront design. 
+
+## Some  simple Code standard -
+
+1. Code layout and implementation
+   like declarations and body properties
+   imports...
+   static
+   varaibles
+   public methods
+   private
+   @Test
+2. use single (, remove usless brace
+3. remove unused imports
+4. smaller  or refactor out logic into a privatemethod that define the intent
+5. Try to move away from null checks
+6. Try to remove all warnings when possible use the sonar guid
+7. Take advantage of the Spell checker of the IDE
+8. No Need for explicit  if else logic to return a simple true or false just return the results of the check
+
+
