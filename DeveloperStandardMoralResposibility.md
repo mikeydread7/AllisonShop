@@ -21,10 +21,10 @@
 4. Don't repeat yourself (DRY). ...  
 5. Minimize upfront design. 
 
-## Some  simple Code standard -
-k
-1. Code layout and implementation 
-   * like declarations and body properties should stay together 
+## Some simple Code standard -
+
+1. Code layout and implementation , like declarations and body properties should stay together 
+
    * imports... 
    * static 
    * varaibles 
@@ -32,8 +32,8 @@ k
    * public methods 
    * private methods 
    * @Test 
-   * documentthe interface signitures and the are all public uless its java 8  some  are defaults 
-      so no need to add public keyword. 
+   * Documenting the interface signitures is a good thing for javadoc generation
+   * all public signiture declaration are pulic by default its usless to say public again unless its java 8 some are defaults  
    * enums by default have private constructor no need to say private 
    * don't throw exception where its not thrown AKA jisis is thrown like crazy in our code base annoying 
   
