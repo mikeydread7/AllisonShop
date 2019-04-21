@@ -8,9 +8,8 @@ package com.allison.shop.app;
  *
  */
 public class CollectionSchedular extends BatchSchedular {
-	public  CollectionSchedular() {
-		 super(ACHBatchType.COLLECTION);
+	public CollectionSchedular() {
+		super(ACHBatchType.COLLECTION);
 	}
 	
-
 }

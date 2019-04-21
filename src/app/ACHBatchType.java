@@ -8,7 +8,11 @@ package com.allison.shop.app;
  *
  */
 public enum ACHBatchType {
-	COLLECTION(1, "COLLECTION"), PAYROLL(2, "Employeee"), REVERSAL(3, "Reversal");
+	COLLECTION(1, "COLLECTION"), 
+	PAYROLL(2, "Employeee"), 
+	VENDOR(3, "Employeee"),
+	REVERSAL(4, "Reversal");
+	
 	public Integer code;
 	public String name;
 
