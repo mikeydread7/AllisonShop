@@ -22,3 +22,8 @@ hal browser
 - http://localhost:8092/shop/product/items 
 - http://localhost:8092/shop/product/items/shortname/{shortName} 
 - http://localhost:8092/shop/product/items/future/day/{dayOffset} 
+
+
+
+
+https://judgetraining.torchlms.com/login/default-view?forceManual=True
