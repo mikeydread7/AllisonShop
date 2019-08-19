@@ -1,5 +1,6 @@
 
 ## Moral Ethics of a Developer:-  Self govern Developer with a universal regards for mankind.
+* [https://jeremiahflaga.github.io/memorabilia/videos/expecting-professionalism-by-uncle-bob-martin/] Uncle Bob ideao
 * Quotes from Uncle Bob -  Robert C. Martin author of books like Clean Code ,Clean Architecture. 
 * Software should be easy to change the behavior of our hardware. If we make it hard to understand, we have done harm. 
 1. I will not write harmful code. Release any known defect, make it hard to understand by other developers. 
