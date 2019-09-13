@@ -54,44 +54,44 @@
 
 ## Development standards
 Naming
- • Express what the class/varaibles/Method  clearly doe as possible in the name it should not be obscure or misleading
- • Make the name as long as you need. You have 244 charracter for identeifiers in java.
+* Express what the class/varaibles/Method  clearly doe as possible in the name it should not be obscure or misleading
+* Make the name as long as you need. You have 244 charracter for identeifiers in java.
 Consistent levels of abstraction (SLAP)
-•	If the responsibility of a method is simple enough, implement it in the method with no calls to dependencies
-•	If the responsibility of a method requires sending a message to a dependency, everything the method does should send a message to a dependency.
+*	If the responsibility of a method is simple enough, implement it in the method with no calls to dependencies
+*	If the responsibility of a method requires sending a message to a dependency, everything the method does should send a message to a dependency.
 Single responsibility
-•	A class should do one thing.  If it is in danger of doing more than one thing, defer to a dependency.
-•	Collaboration is responsibility.
+*	A class should do one thing.  If it is in danger of doing more than one thing, defer to a dependency.
+*	Collaboration is responsibility.
 Method length
-•	A method should be 5 lines or fewer, with no line breaks.  If you feel the urge to add a blank line consider breaking the code into multiple methods or extract classes.
-•	If your method goes above 5 lines consider decomposing it into multiple methods or classes.
+*	A method should be 5 lines or fewer, with no line breaks.  If you feel the urge to add a blank line consider breaking the code into multiple methods or extract classes.
+*	If your method goes above 5 lines consider decomposing it into multiple methods or classes.
 One control structure per method
-•	Only have one if/for/while/case statement per method.  Any code that can branch or run in a non-linear mode is a source of complexity.
+*	Only have one if/for/while/case statement per method.  Any code that can branch or run in a non-linear mode is a source of complexity.
 One executable line per control structure
-•	Within the body of a control structure only allow a single executable statement.  If you need more than one extract methods or classes.  This is especially true if you next a control structure.
+*	Within the body of a control structure only allow a single executable statement.  If you need more than one extract methods or classes.  This is especially true if you next a control structure.
 Clear intent
-•	Whenever possible make the code clearly express what it does.  The name of class/method/variable should never be allowed to mislead the reader.
+*	Whenever possible make the code clearly express what it does.  The name of class/method/variable should never be allowed to mislead the reader.
 Favor immutability
-•	If a class needs a dependency to perform its function add it as constructor argument.
-•	Do not share dependencies or allow them to be modified outside of the class that owns the dependencies.
-
+*	If a class needs a dependency to perform its function add it as constructor argument.
+*	Do not share dependencies or allow them to be modified outside of the class that owns the dependencies.
 
 # Testing standards
 Naming
-•	Test name should describe what is being tested
-•	Test name should include description of expected outcome
-•	Test name does not need to begin or end with “Test”
+*	Test name should describe what is being tested
+*	Test name should include description of expected outcome
+*	Test name does not need to begin or end with “Test”
 Arrange, Act, Assert
-•	Separate each section with a single blank line
+*	Separate each section with a single blank line
 Should test one thing
-•	If you need to use the word “and” to describe what the test is doing break it into multiple tests
-•	If you are asserting and verifying in a single test consider breaking it into multiple tests
+*	If you need to use the word “and” to describe what the test is doing break it into multiple tests
+*	If you are asserting and verifying in a single test consider breaking it into multiple tests
 Mock out dependencies we own
-•	Mock out anything we have the power to change (code in our repositories)
-•	Do not mock out third party dependencies.  Instead, create an adapter layer on top of it and mock that.
+*	Mock out anything we have the power to change (code in our repositories)
+*	Do not mock out third party dependencies.  Instead, create an adapter layer on top of it and mock that.
 Create integration tests for dependencies we don’t own
-•	If you create an adapter for a third party dependency, write an integration test if needed.
-•	Consider fakes for dependencies that are slow to communicate (database, rest services, remote file system)
+
+*	If you create an adapter for a third party dependency, write an integration test if needed.
+*	Consider fakes for dependencies that are slow to communicate (database, rest services, remote file system)
 
   
 
