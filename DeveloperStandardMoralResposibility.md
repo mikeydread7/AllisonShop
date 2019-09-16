@@ -51,6 +51,9 @@
 10. Reduce your test to a single unit for controllable and predictable results. Single responsibility rule.
 11. Use the IDE code formatter or shortcut keys
 12. Be responsible in taking pride in our craft, Joy and respect. We are Geniuss and Gods.
+13. Try to  use space between your variables String myString=”mystring”;  more acceptable  String myString = ”mystring”;  
+14.	Be responsibile for taking pride in our craft, Joy and respect. We are Geniuses and Gods.
+
 
 ## Development standards
 Naming
