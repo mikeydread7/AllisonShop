@@ -38,3 +38,51 @@ REACT JS ROUTING COOL STUF
 https://www.youtube.com/watch?v=Law7wfdg_ls -- Cool Routing
 
 https://www.youtube.com/watch?v=Bv_5Zv5c-Ts  - JAVASCRIPT
+
+
+
+
+
+
+
+
+
+
+public class SpringBatchAndQuartzApplicationTests {
+    final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    final Map<Integer, String> failureMap = new HashMap<>();
+    final Map<String, Map<Integer, String>> testFailureResults = new HashMap<>();
+
+    @Test
+    public void contextLoads() {
+        List<String> featureNames = Arrays.asList(
+				"Document_Success", "Document_Failure",
+        		"BinaryDe_Success", "BinaryDelete_Failure",
+                "Metadata_Success", "Metadata_Failure"
+		);
+
+        featureNames.forEach(featureName-> {
+			Random rand = new Random();
+			final Integer count = rand.nextInt(5);
+            for (int iteration = 0; iteration <= count; iteration++) {
+                failureMap.put(iteration, "fail");
+            }
+            testFailureResults.put(featureName, failureMap);
+        });
+        getFailureReport();
+    }
+
+    private void getFailureReport() {
+        testFailureResults.forEach((featureName, featureMap) -> {
+            featureMap.forEach((key, value) -> {
+                        LOGGER.error("{} {} index {}", featureName, key, value);
+                    }
+            );
+        });
+    }
+}
+
+
+
+
+
