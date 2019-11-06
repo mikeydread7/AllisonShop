@@ -42,12 +42,6 @@ https://www.youtube.com/watch?v=Bv_5Zv5c-Ts  - JAVASCRIPT
 
 
 
-
-
-
-
-
-
 public class SpringBatchAndQuartzApplicationTests {
     final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
     final Map<Integer, String> failureMap = new HashMap<>();
@@ -64,25 +58,30 @@ public class SpringBatchAndQuartzApplicationTests {
         featureNames.forEach(featureName-> {
 			Random rand = new Random();
 			final Integer count = rand.nextInt(5);
-            for (int iteration = 0; iteration <= count; iteration++) {
-                failureMap.put(iteration, "fail");
-            }
+            mapTheFeatureIteration(count);
             testFailureResults.put(featureName, failureMap);
         });
         getFailureReport();
     }
 
+    private void mapTheFeatureIteration(final Integer count) {
+        for (int iteration = 0; iteration <= count; iteration++) {
+            failureMap.put(iteration, "fail");
+        }
+    }
+
     private void getFailureReport() {
         testFailureResults.forEach((featureName, featureMap) -> {
-            featureMap.forEach((key, value) -> {
-                        LOGGER.error("{} {} index {}", featureName, key, value);
-                    }
-            );
+            outputTheFailure(featureName, featureMap);
         });
     }
+
+    private void outputTheFailure(final String featureName, final Map<Integer, String> featureMap) {
+        featureMap.forEach((key, value) -> {
+                    LOGGER.error("{} {} index {}", featureName, key, value);
+                }
+        );
+    }
 }
-
-
-
 
 
