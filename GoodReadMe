@@ -39,49 +39,22 @@ https://www.youtube.com/watch?v=Law7wfdg_ls -- Cool Routing
 
 https://www.youtube.com/watch?v=Bv_5Zv5c-Ts  - JAVASCRIPT
 
+1. Application Developer  10/2019 -preset 
+ 1111 polaris Parkway  Columbus Ohio, 43240
 
+2. Consultant/Contractor  12/14/2018 -09/2019 -   last paycheck '10/4/2019'
+Judge Group/JP Morgan Chase   J.P. Morgan Chase 1000 polaris Parkway  Columbus Ohio, 43240
 
+3. Fifth Third Bank, Cincinnati, Ohio	2018/03-2018/10 
+Contractor IT Application Development  /Insight Global                                                                     
 
-public class SpringBatchAndQuartzApplicationTests {
-    final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
-    final Map<Integer, String> failureMap = new HashMap<>();
-    final Map<String, Map<Integer, String>> testFailureResults = new HashMap<>();
+4. Medical Recorvery - Major Recontruction Surgery Broken Leg
 
-    @Test
-    public void contextLoads() {
-        List<String> featureNames = Arrays.asList(
-				"Document_Success", "Document_Failure",
-        		"BinaryDe_Success", "BinaryDelete_Failure",
-                "Metadata_Success", "Metadata_Failure"
-		);
+5. J.P. Morgan Chase 1111 polaris Parkway  Columbus Ohio, 
+Application Developer 		06/24/2016 05/27/2017
+J.P. Morgan Chase 1111 polaris Parkway  Columbus Ohio, 
+Application Developer 07/31/2014 05/19/2016
 
-        featureNames.forEach(featureName-> {
-			Random rand = new Random();
-			final Integer count = rand.nextInt(5);
-            mapTheFeatureIteration(count);
-            testFailureResults.put(featureName, failureMap);
-        });
-        getFailureReport();
-    }
-
-    private void mapTheFeatureIteration(final Integer count) {
-        for (int iteration = 0; iteration <= count; iteration++) {
-            failureMap.put(iteration, "fail");
-        }
-    }
-
-    private void getFailureReport() {
-        testFailureResults.forEach((featureName, featureMap) -> {
-            outputTheFailure(featureName, featureMap);
-        });
-    }
-
-    private void outputTheFailure(final String featureName, final Map<Integer, String> featureMap) {
-        featureMap.forEach((key, value) -> {
-                    LOGGER.error("{} {} index {}", featureName, key, value);
-                }
-        );
-    }
-}
+6. 11/26/2012 08/22/2014 Nationwide  215 N Front StColumbus, OH 43215 
 
 
