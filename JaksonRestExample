@@ -1,0 +1,57 @@
+
+
+1980@MafciT
+
+@RestController
+@RequestMapping("/context_endpoint_url")
+public class  MyController{
+	
+  @RequestMapping("/country/roads, method =RequestMethod.GET", 
+							consumes={MediaType.APPLICATION_JSON_VALUE},
+							produces={MediaType.APPLICATION_JSON_VALUE})
+	public 	ResponseObject carlist( @NotNull @Valid final RequestObject requestObject) throws OurException{
+			return requestObject.execut();
+	}
+}
+
+
+package com.mycompany;
+
+import com.mycompany.ResponseObject;
+
+public  class RequestObject extends ProfileServiceRequest{
+
+	 private String propertyObj;
+	 private Long propertyLen;
+	 
+	 
+	 @JsonCreator
+	 public RequestObject(@JsonProperty("property")final  final String propertyjO
+						  @JsonProperty("propertyLen")    final Long propertyLen
+						  @JsonProperty("profileId")@NotNull profileId){
+		super(profileId);
+	 
+		this.propertyObj= normalizedProperty(propertyObj);
+		this.propertyLen = normalizedPropertyLen(propertyLen);
+
+	}
+
+	private String normalizedProperty( String propertyObj){
+
+		return (propertyObj.equalsIgnoreCase("lower")) 
+		? propertyObj.concat(ok') 
+		: propertyObj;
+	}
+	private Long normalizedPropertyLen(Long propertyLen){
+		return (propertyLen == 5L)
+		? 0L 
+		: propertyLen;
+	}
+	
+	public ResponseObject execute(){
+	 //call ..
+	 // ...
+	 
+	}
+	
+}
