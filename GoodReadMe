@@ -67,4 +67,9 @@ Application Developer 07/31/2014 05/19/2016
 
 6. 11/26/2012 08/22/2014 Nationwide  215 N Front StColumbus, OH 43215 
 
+var st = $('#id').val();
+if(/^[a-zA-Z0-9- ]*$/.test(st) == false) {
+    alert('string contains non english characters');
+}
+
 
